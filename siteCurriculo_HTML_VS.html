@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="siteCurriculo_CSS_VS.css">
+    <title>Currículo</title>
+</head>
+<body>
+    <nav>
+            <div>
+                <button href="" onclick="sectionInicio()">Inicio</button>
+            </div>
+            <div>
+                <button href="" onclick="sectionSobreMim()">Sobre Mim</button>
+            </div>
+            <div>
+                <button href="" onclick="sectionQualificacoes()">Qualificações</button>
+            </div>
+            <div>
+                <button href="" onclick="sectionExperiencia()">Experiências</button>
+            </div>
+            <div>
+                <button href="" onclick="sectionMural()">Mural</button>
+            </div>
+            <div>
+                <button href="" onclick="sectionContato()">Contato</button>
+            </div>     
+    </nav>
+    
+    <section id="tela_inicial">
+        <div class="foto_inicial col-50">
+            <img src="foto_inicio.jpg" alt="" width="100%" height="100%" >
+        </div>
+        <div class="inicio col-50">
+            <h1>Bernardo da Silva</br> Pathecki</h1>
+            <p>ESTUDANTE DE PROGRAMAÇÃO</p>
+        </div>
+    </section>
+    <section id="sobre_mim">
+        <h1>Sobre mim</h1>
+        <div class="sobre_mim_2">
+            <div class="ft_sobre_mim col-50">
+                <img src="foto_sobre_mim.jpg" alt="" width="90%" height="90%" >
+            </div>
+            <div class="txt_sobre_mim col-50">
+                <h4>Como estudante de programação, estou constantemente explorando linguagens de programação, algoritmos e estruturas de dados para desenvolver soluções inovadoras e eficazes.</h4>
+                <p>Acredito que a programação é uma ferramenta poderosa para moldar o futuro e estou ansioso para continuar minha jornada de aprendizado e crescimento nesse campo empolgante.</p>
+            </div>
+        </div>
+    </section>
+    <section id="qualificacoes">
+        <h1>Qualificações</h1>
+        <div class="qualificacoes_2">
+            <div class="formacao col-40">
+                <h4>Formação</h4>
+                    <p><b>Jovem Programador</b></p>
+                    <p>2022 - Atual </p>
+                    <P>SENAC</P>
+            </div>
+            <div class="habilidades col-40">
+                <h4>Habilidades</h4>
+                <ul>
+                    <p>C#</p>
+                    <p>Banco de Dados(relacional)</p>
+                    <p>Front-End</p>
+                    <p>Back-End</p>
+                </ul>
+            </div>
+            <div class="ft_formacao col-20">
+                <img src="foto_formacao.jpg" alt="" width="60%" height="60%">
+            </div>
+        </div>
+    </section>
+    <section id="experiencia_profissional">
+        <h1>Experiência Profissional</h1>
+        <div class="experiencia">
+            <div class="exp_1 col-30">
+                <b>Auxiliar de Expedição</br>
+                   Tecelagem Amabile</b>
+                   <p>DESDE FEVEREIRO/2020</p>
+            </div>
+            <div class="exp_2 col-40">
+                <b>Menor Aprendiz </br>
+                   Arrazanty</b>
+                   <p>JAN - DEZ/2018</p>
+            </div>
+            <div class="exp_3 col-30">
+                <b>Menor Aprendiz </br>
+                    Irmãos Hort</b>
+                    <p>JAN - DEZ/2019</p>
+            </div>
+        </div>
+    </section>
+    <section id="mural">
+        <h1>Mural</h1>
+        <div class="mural_2">
+            <div class="carousel-conteiner">
+                <div class="carousel-slide col-50" id="slide1">
+                    <img src="foto_carousel_1.jpg" alt="Imagem 1" height="25%" width="25%">
+                </div>
+                <div class="carousel-slide" id="slide2">
+                    <img src="foto_carousel_2.jpg" alt="Imagem 2" height="25%" width="25%">
+                </div>
+                <div class="carousel-slide" id="slide3">
+                    <img src="foto_carousel_3.jpg" alt="Imagem 3" height="25%" width="25%">
+                </div>
+            </div>
+            <script src="siteCurriculo_JS_VS.js"></script>
+            <div class="comentarios col-50">
+                <div class="comentarios_2">
+                    <div class="comentario">
+                        <b>Saci Pererê</b>
+                        <p>~~~~~~~~~~~~~~~~~~</p>
+                    </div>
+                    <div class="comentario">
+                        <b>Stitch</b>
+                        <p>~~~~~~~~~~~~~~~~~~</p>
+                    </div>
+                    <div class="comentario">
+                        <b>Roberto Carlos</b>
+                        <p>~~~~~~~~~~~~~~~~~~</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="btn">
+                        <button>Ver Mais</button>
+
+                        <button onclick="abrirTelinha()">Adicionar um comentário</button>
+                        
+                        <div id="tela_comentario" class="adicionar_comentario">
+                            <div class="telinha_comentario">
+                                <span class="close" onclick="fecharTelinha()">&times;</span>
+                                <h2>Adicionar comentário</h2>
+                                <form id="novo_comentario">
+                                    <label for="nome">Insira seu nome:</label>
+                                    <input type="text" name="" id=""></br>
+                                    <label for="mensagem">Digite sua mensagem:</label>
+                                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    
+                                    <button type="button" onclick="enviarMensagem()">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container_contato">
+            <div class="img_contato col-50">
+                <img src="foto_contato.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="btn_contato col-50">
+                <h1>Contato</h1>
+                <div class="botoes">
+                    <div>
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bernardodasilvapathecki%40gmail.com&su=Rascunho&body=Ol%C3%A1%2C%20segue%20o%20rascunho%20do%20e-mail:" target="_blank">
+                        <button id="btn_email">E-MAIL</button>
+                    </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/bernardopathecki/" target="_blank">
+                            <button id="btn_linkedin">LINKEDIN</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/b_pathecki/" target="_blank">
+                            <button>INSTAGRAM</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5547992355846" target="_blank">
+                            <button id="btn_whatsapp">WHATSAPP</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
